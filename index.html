@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teşekkür Kartı — Öğretmene Sürpriz</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro-screen">
+        <div class="heartbeat-logo">
+            <span class="e-char">E</span>
+            <span class="g-char">G</span>
+        </div>
+        <div style="font-size: 18px; color:white; margin-top: 30px; opacity: 0.7;">Yükleniyor...</div>
+    </div>
+
+    <div class="stage" id="main-stage">
+        <div class="envelope-wrap" id="envelopeWrap">
+            <div class="shadow" id="shadow"></div>
+            <div class="envelope" id="envelope" role="button" aria-label="Zarfa tıkla, aç" tabindex="0">
+                <div class="flap" id="flap"></div>
+                <div class="card-inner" id="cardInner">
+                    <div style="font-size:13px;color:#7b8794">Bir sürprizin var</div>
+                    <div class="title">Senin için</div>
+                    <div class="subtitle">Zarfa tıkla ve aç!</div>
+                </div>
+            </div>
+            <canvas class="sparkle" id="confetti" width="800" height="600" style="position: absolute; pointer-events:none; z-index: 15;"></canvas>
+            <div class="big-message" id="bigMsg">TEŞEKKÜRLER ÖĞRETMENİM! 🎉</div>
+        </div>
+    </div>
+    <audio id="music" src="" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
